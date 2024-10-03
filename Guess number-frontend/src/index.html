@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="/src/modules/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Gissa numret!</h1>
+    <div>
+        <h3>Spelregler:</h3>
+        <p>Datorn tänker på ett nummer mellan 1 och 3.
+            <br>
+            Gissa vilket nummer datorn tänker på.
+            <br>
+            Rätt gissning: Du får 1 poäng och datorn tänker på ett nytt nummer.
+            <br>
+            Fel gissning: Din poäng jämförs med highscorelistan. 
+            <br>
+            Om din poäng är hög nog, läggs du till i listan. Din poäng återställs till 0 och datorn tänker på ett nytt nummer.
+        </p>
+    </div>
+
+    <form id="guessForm">
+        <input type="number" id="playersGuess" placeholder="Ange ett nummer">
+        <button type="submit" id="guessBtn">Gissa</button>
+    </form> <!-- Här skriver spelaren sin gissning -->
+
+    <p id="result"></p> <!-- Text som säger rätt eller fel -->
+    
+    <div id="pointcounter"> <!-- Visar spelarens poäng genom spelets gång -->
+        <p> </p>
+    </div>
+
+    <div id="namediv">
+    </div>
+
+    <h4>Highscore lista</h4> <!-- Lis -->
+    <ol id="highScoreList">
+    </ol>
+
+    
+
+</body>
+</html>
